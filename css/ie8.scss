@@ -12,6 +12,20 @@
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+/* Peoples Image*/
+.img_div {
+    border: 3px solid #0f0;
+    overflow:auto; // without overflow here, if the "Line 1" and "Line 2" is short then "Next elements" will display below "Line 2" and the image will cover the "Next elements" 
+}
+.headshot {
+   float: left;
+   width:100px;
+   height:100px;
+   background: #000 
+}
+.line_div {
+   float: left; // without float here, if "Line 1" and "Line 2" is long -> text will display both at right and bottom the image
+} 
 
 /* Icon */
 
