@@ -2,13 +2,14 @@
 #
 
 # Site settings
-title: Computer Vision & Machine Intelligence lab.
+title: CVMILab-CUK
 description: |
-  Another fine responsive  
-  site template freebie  
-  crafted by [HTML5 UP](http://html5up.net)
-owner: Your Name # or company name
-first_published: 2016 # if migrating another site, the year of your first publish
+  The Computer Vision and Machine Intelligence laboratory is a media engineering laboratory that studies image processing and computer vision.
+  The main research areas are medical image processing, smart farms, machine learning/deep learning-based image processing, and computer vision.
+  We are currently conducting research on the overall areas of computer vision, including Object Detection, Image Segmentation, Facial Landmark Detection, and Human Pose Estimation.
+  
+owner: Catholic University of Korea # or company name
+first_published: 2020 # if migrating another site, the year of your first publish
 email: your-email@domain.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
