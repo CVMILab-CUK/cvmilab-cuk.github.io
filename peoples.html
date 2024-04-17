@@ -3,10 +3,27 @@ layout: page
 title: Peoples
 ---
 
+.div1 {
+    border: 3px solid #0f0;
+    overflow:auto; // without overflow here, if the "Line 1" and "Line 2" is short then "Next elements" will display below "Line 2" and the image will cover the "Next elements" 
+}
+.img {
+   float: left;
+   width:100px;
+   height:100px;
+   background: #000 
+}
+.div2 {
+   float: left; // without float here, if "Line 1" and "Line 2" is long -> text will display both at right and bottom the image
+} 
+
 <h2>Professor</h2>
 <hr/>    
-<div class ="professor">
-<span class="professor img"><img src="images/peoples/professor.jpg" float="left" alt=""/></span><p><h4>강호철</h4> Major : Digital Media Engineering, Medical Artificial Intelligence<br/>Location : D532<br/>E-Mail : hckang19@catholic.ac.kr<br/></p>
+<div class ="div1">
+<img src="images/peoples/professor.jpg" float="left" alt=""/>
+<div class="div2">
+<p><h4>강호철</h4> Major : Digital Media Engineering, Medical Artificial Intelligence<br/>Location : D532<br/>E-Mail : hckang19@catholic.ac.kr<br/></p>
+</div>
 </div>
 
 
