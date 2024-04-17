@@ -5,7 +5,7 @@
 title: CVMI-CUK
 description: 
   From Pixels to Insights
-  
+
 owner: Catholic University of Korea # or company name
 first_published: 2020 # if migrating another site, the year of your first publish
 email: your-email@domain.com
@@ -17,7 +17,7 @@ social:
   #linkedin-square: https://linkedin.com/in/<username>
   #facebook-official: https://facebook.com/<username>
   #google-plus-square: https://plus.google.com/u/0/+<username>
-  #email: /contact/
+  email: /contact/
   #flickr:
   #instagram:
   #youtube-square:
