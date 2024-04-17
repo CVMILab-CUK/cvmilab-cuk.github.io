@@ -2,11 +2,9 @@
 #
 
 # Site settings
-title: CVMILab-CUK
-description: |
-  The Computer Vision and Machine Intelligence laboratory is a media engineering laboratory that studies image processing and computer vision.
-  The main research areas are medical image processing, smart farms, machine learning/deep learning-based image processing, and computer vision.
-  We are currently conducting research on the overall areas of computer vision, including Object Detection, Image Segmentation, Facial Landmark Detection, and Human Pose Estimation.
+title: CVMI-CUK
+description: 
+  From Pixels to Insights
   
 owner: Catholic University of Korea # or company name
 first_published: 2020 # if migrating another site, the year of your first publish
@@ -15,7 +13,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 social:
   #twitter: https://twitter.com/<username>
-  github: https://github.com/CVMILab-CUK/<username>
+  github: https://github.com/CVMILab-CUK/ #<username>
   #linkedin-square: https://linkedin.com/in/<username>
   #facebook-official: https://facebook.com/<username>
   #google-plus-square: https://plus.google.com/u/0/+<username>
