@@ -4,9 +4,9 @@
 # Site settings
 title: CVMI-CUK
 description: 
-  From Pixels to Insights
+  Beyond Sight
 
-owner: Catholic University of Korea # or company name
+owner: The Catholic University of Korea # or company name
 first_published: 2020 # if migrating another site, the year of your first publish
 email: your-email@domain.com
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -17,7 +17,7 @@ social:
   #linkedin-square: https://linkedin.com/in/<username>
   #facebook-official: https://facebook.com/<username>
   #google-plus-square: https://plus.google.com/u/0/+<username>
-  email: /contact/
+  email: /4-contact/
   #flickr:
   #instagram:
   #youtube-square:
