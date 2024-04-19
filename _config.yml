@@ -10,7 +10,7 @@ description:
 collections:
   posts:
     output: ture
-    permalink: /:basename:/post/output_ext
+    permalink: /:basename:output_ext
 
 # Pages
 defaults:
