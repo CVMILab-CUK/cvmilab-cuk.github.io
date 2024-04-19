@@ -12,14 +12,14 @@ description:
 defaults:
   - scope:
       path: '_pages'
-    # values:
-    #   permalink: /:basename/
+    values:
+      permalink: /:basename/
 
 # Collections
 collections:
   posts:
     output: ture
-    permalink: /:basename:output_ext
+    permalink: /:title:output_ext
   
   # cheat:
   #   output: ture
