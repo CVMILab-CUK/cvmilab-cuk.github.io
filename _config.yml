@@ -23,7 +23,7 @@ collections:
   
   cheat:
     output: ture
-    permalink: /:basname:output_ext
+    permalink: /:basename:output_ext
 
 include:
   - _pages
