@@ -25,8 +25,8 @@ collections:
   #   output: ture
   #   permalink: /:basename:output_ext
 
-include:
-  - _pages
+# include:
+#   - _pages
 
 owner: The Catholic University of Korea # or company name
 first_published: 2020 # if migrating another site, the year of your first publish
