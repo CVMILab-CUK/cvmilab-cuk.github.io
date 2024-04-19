@@ -42,7 +42,15 @@ layout: landing
 								<h2>New Article<br />
 								Aceepted</h2>
 								<p>A paper has been accepted in the Journal of Animal Science and Technology at July. 2023.<br/>
-									<a href="/_post/test.md">Read More%20<span class="icon fa-arrow-right"></span></a>
+									<a href="/_post/test.md">Read More <span class="icon fa-arrow-right"></span></a>
+									{% for staff_member in site._posts %}
+									<h2>
+										<a href="{{ staff_member.url }}">
+										test
+										</a>
+									</h2>
+									<p>{{ staff_member.content | markdownify }}</p>
+									{% endfor %}
 								</p>	
 							</div>
 						</section>
@@ -50,7 +58,7 @@ layout: landing
 							<div class="image"><img src="images/main/banner3.jpg" alt="" /></div><div class="content">
 								<h2>Now Recruiting</h2>
 								<p>We are recruiting undergraduate researchers and graduate students.<br/>
-									<a href="/4-contact.html">Learn More%20<span class="icon fa-arrow-right"></span></a>
+									<a href="/4-contact.html">Learn More <span class="icon fa-arrow-right"></span></a>
 								</p>
 							</div>
 						</section>
