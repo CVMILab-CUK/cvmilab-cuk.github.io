@@ -1,6 +1,16 @@
 ---
 layout: landing
+permalink : /
 ---
+
+{% assign last_post = nil %}
+{% for post in site.posts %}
+	{% if last_post == nil or post.date > last_post.date %}
+	{% assign last_post = post %}
+	{% endif %}
+{% endfor %}
+
+
 				<!-- Banner -->
 					<section id="banner">
 						<div class="inner">
@@ -41,8 +51,8 @@ layout: landing
 							<div class="image"><img src="images/main/banner2.jpg" alt="" /></div><div class="content">
 								<h2>New Article<br />
 								Aceepted</h2>
-								<p>A paper has been accepted in the Journal of Animal Science and Technology at July. 2023.<br/>
-									<a href="/_post/test.md">Read More <span class="icon fa-arrow-right"></span></a>
+								<p>{{last_post.description}}<br/>
+									<a href="{{site.baseurl}}{{last_post.permalink}}">Read More <span class="icon fa-arrow-right"></span></a>
 								</p>	
 							</div>
 						</section>
@@ -50,7 +60,7 @@ layout: landing
 							<div class="image"><img src="images/main/banner3.jpg" alt="" /></div><div class="content">
 								<h2>Now Recruiting</h2>
 								<p>We are recruiting undergraduate researchers and graduate students.<br/>
-									<a href="/4-contact.html">Learn More <span class="icon fa-arrow-right"></span></a>
+									<a href="{{site.baseurl}}/contact/">Learn More <span class="icon fa-arrow-right"></span></a>
 								</p>
 							</div>
 						</section>
@@ -67,38 +77,38 @@ layout: landing
 								<li class="icon fa-paper-plane-o">
 									<h3>Computer Vision</h3>
 									<p><span class="image fit">
-										<img src="images/main/project1.jpg" alt="" />
+										<img src="{{site.baseurl}}/images/main/project1.jpg" alt="" />
 									</span>AI 기반으로 다양한 컴퓨터 비전 Task 수행</p>
 								</li>
 								<li class="icon fa-laptop">
 									<h3>Medical Imaging</h3>
 									<p><span class="image fit">
-										<img src="images/main/project2.jpg" alt="" />
+										<img src="{{site.baseurl}}/images/main/project2.jpg" alt="" />
 									</span>Skull Segmentation in Dental CT, Skin, Mandible, Maxilla, Cartilage, Implant etc..</p>
 								</li>
 								<li class="icon fa-code">
 									<h3>Facial Landmark Detection</h3>
 									<p><span class="image fit">
-										<img src="images/main/project3.jpg" alt="" />
+										<img src="{{site.baseurl}}/images/main/project3.jpg" alt="" />
 									</span>Finding the characteristic points of human face</p>
 								</li>
 								<li class="icon fa-headphones">
 									<h3>Biomedical Imaging</h3>
 									<p><span class="image fit">
-										<img src="images/main/project4.jpg" alt="" />
+										<img src="{{site.baseurl}}/images/main/project4.jpg" alt="" />
 									</span>DAPI Image Classification and Data augmentation with generative model</p>
 								</li>
 								<li class="icon fa-heart-o">
 									<h3>Smart Farm</h3>
 									<p><span class="image fit">
-										<img src="images/main/project5.jpg" alt="" />
+										<img src="{{site.baseurl}}/images/main/project5.jpg" alt="" />
 									</span>Normal Ducks and abnormal ducks detection in duck cage<br/>
 										Automatic recognition of the duck farm mat moisture content</p>
 								</li>
 								<li class="icon fa-flag-o">
 									<h3>Image Inpainting</h3>
 									<p><span class="image fit">
-										<img src="images/main/project6.jpg" alt="" />
+										<img src="{{site.baseurl}}/images/main/project6.jpg" alt="" />
 									</span>Image Inpainting on high-resolutional face image using Transformers with patch-based masking</p>
 								</li>
 							</ul>
@@ -113,8 +123,8 @@ layout: landing
 								<p>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</p>
 							</header>
 							<ul class="actions vertical">
-								<li><a href="/4-contact.html" class="button fit special">Contact</a></li>
-								<li><a href="/1-publications.html" class="button fit">Learn More</a></li>
+								<li><a href="{{site.baseurl}}/contact/" class="button fit special">Contact</a></li>
+								<li><a href="{{site.baseurl}}/publications/" class="button fit">Learn More</a></li>
 							</ul>
 						</div>
 					</section>

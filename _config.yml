@@ -7,21 +7,18 @@ description:
   Beyond Sight
 
 # Pages
-defaults:
-  - scope:
-      path: '_pages'
-    values:
-      permalink: /:basename:output_ext
+# defaults:
+#   - scope:
+#       path: '_pages'
+#     values:
+#       permalink: /:basename:output_ext
 
-# Collections
-# collections:
-#   posts:
-#     output: ture
-#     permalink: /:title:output_ext
-  
-  # cheat:
-  #   output: ture
-  #   permalink: /:basename:output_ext
+collections:
+  pages:
+      output: true
+  posts:
+    output: true
+    permalink: /:basename:output_ext
 
 include:
   - _pages

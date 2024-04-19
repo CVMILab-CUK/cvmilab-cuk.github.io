@@ -2,6 +2,7 @@
 layout: page_dli
 title: NVIDIA DLI
 permalink : /dli/
+image: dli/NVIDIA.jpg
 ---
 
 <header>
@@ -12,7 +13,7 @@ permalink : /dli/
 
 <section>
     <p>
-        <img class = "image left" src="images/dli/DLI_Banner.png" float="left" alt=""/>
+        <img class = "image left" src="{{site.baseurl}}/images/dli/DLI_Banner.png" float="left" alt=""/>
         <h4>
             <center>NVIDIA DLI</center>
         </h4>
@@ -100,7 +101,3 @@ permalink : /dli/
     <hr/>
 </section>
 
-{% for post in site.posts %}
-    <a href="{{ post.url }}">{{ post.title }}</a>
-    {{ post.excerpt }}
-{% endfor %}

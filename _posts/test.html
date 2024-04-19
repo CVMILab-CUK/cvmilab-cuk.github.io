@@ -1,0 +1,20 @@
+---
+layout: post
+title:  TestPost
+description: Test Post Now Available
+permalink: /posts/test/
+image : main/404.jpg
+date: 2024-04-18
+---
+
+<p>
+Now Can I post posting??
+</p>
+
+
+
+<p>
+    {% for post in site.pages %}
+        <a src="{{ post.url }}">{{ post.name }}</a>
+    {% endfor %}
+</p>
