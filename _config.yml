@@ -8,7 +8,7 @@ description:
 
 # Collections
 collections:
-  _pages:
+  _post:
     output: ture
 
 # Pages
@@ -25,7 +25,7 @@ owner: The Catholic University of Korea # or company name
 first_published: 2020 # if migrating another site, the year of your first publish
 email: hckang19@catholic.ac.kr
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "https://cvmilab-cuk.github.io/" # the base hostname & protocol for your site
 social:
   #twitter: https://twitter.com/<username>
   github: https://github.com/CVMILab-CUK/ #<username>
