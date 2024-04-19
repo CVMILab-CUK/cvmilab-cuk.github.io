@@ -16,10 +16,10 @@ defaults:
       permalink: /:basename:output_ext
 
 # Collections
-# collections:
-#   posts:
-#     output: ture
-#     permalink: /:basename:output_ext
+collections:
+  posts:
+    output: ture
+    permalink: /:basename:output_ext
   
   # cheat:
   #   output: ture

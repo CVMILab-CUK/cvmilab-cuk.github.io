@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  Test Post
+title:  TestPost
 description: Test Post Now Available
 ---
 
