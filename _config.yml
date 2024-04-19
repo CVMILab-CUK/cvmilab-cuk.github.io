@@ -12,8 +12,8 @@ description:
 defaults:
   - scope:
       path: '_pages'
-    values:
-      permalink: /:basename:output_ext
+    # values:
+    #   permalink: /:basename/
 
 # Collections
 collections:
