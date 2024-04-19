@@ -6,6 +6,21 @@ title: CVMI-CUK
 description: 
   Beyond Sight
 
+# Collections
+collections:
+  _pages:
+    output: ture
+
+# Pages
+defaults:
+  - scope:
+      path: '_pages'
+    values:
+      permalink: /:basename:output_ext
+
+include:
+  - _pages
+
 owner: The Catholic University of Korea # or company name
 first_published: 2020 # if migrating another site, the year of your first publish
 email: hckang19@catholic.ac.kr
