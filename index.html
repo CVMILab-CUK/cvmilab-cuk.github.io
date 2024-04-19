@@ -43,14 +43,12 @@ layout: landing
 								Aceepted</h2>
 								<p>A paper has been accepted in the Journal of Animal Science and Technology at July. 2023.<br/>
 									<a href="/_post/test.md">Read More <span class="icon fa-arrow-right"></span></a>
-									{% for staff_member in site._posts %}
-									<h2>
-										<a href="{{ staff_member.url }}">
-										test
-										</a>
-									</h2>
-									<p>{{ staff_member.content | markdownify }}</p>
-									{% endfor %}
+									{% for post in site.posts %}
+									<li>
+									  <a href="{{ post.url }}">{{ post.title }}</a>
+									  {{ post.excerpt }}
+									</li>
+								  {% endfor %}
 								</p>	
 							</div>
 						</section>
