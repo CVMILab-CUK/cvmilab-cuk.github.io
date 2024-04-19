@@ -14,10 +14,10 @@ defaults:
       permalink: /:basename:output_ext
 
 # Collections
-collections:
-  posts:
-    output: ture
-    permalink: /:title:output_ext
+# collections:
+#   posts:
+#     output: ture
+#     permalink: /:title:output_ext
   
   # cheat:
   #   output: ture
@@ -25,6 +25,8 @@ collections:
 
 include:
   - _pages
+  - _posts
+  - _cheat
 
 owner: The Catholic University of Korea # or company name
 first_published: 2020 # if migrating another site, the year of your first publish
