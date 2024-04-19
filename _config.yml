@@ -20,10 +20,13 @@ collections:
   posts:
     output: ture
     permalink: /:basename:output_ext
+  
+  cheat:
+    output: ture
+    permalink: /:basname:output_ext
 
 include:
   - _pages
-  - _posts
 
 owner: The Catholic University of Korea # or company name
 first_published: 2020 # if migrating another site, the year of your first publish
