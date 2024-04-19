@@ -8,8 +8,9 @@ description:
 
 # Collections
 collections:
-  _posts:
+  posts:
     output: ture
+    permalink: /:basename:/post/output_ext
 
 # Pages
 defaults:
