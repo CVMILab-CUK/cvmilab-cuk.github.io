@@ -21,9 +21,9 @@ collections:
     output: ture
     permalink: /:basename:output_ext
   
-  cheat:
-    output: ture
-    permalink: /:basename:output_ext
+  # cheat:
+  #   output: ture
+  #   permalink: /:basename:output_ext
 
 include:
   - _pages
