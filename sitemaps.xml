@@ -10,7 +10,7 @@ layout: null
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
     {% for post in site.post %}
     <url>
-        <loc>{{ site.url }}{{ post.url | remove: 'index.html' }}</loc>
+        <loc>{{site.url}}{{ post.url | remove: 'index.html' }}</loc>
     </url>
     {% endfor %}
     {% for post in site.cheat %}

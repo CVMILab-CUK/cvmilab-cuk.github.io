@@ -1,3 +1,3 @@
 User-agent: *
-Disallow: /
-Sitemap:https://cvmilab-cuk.github.io/sitemap.xml
+Allow:
+Sitemap:https://cvmilab-cuk.github.io/sitemaps.xml
