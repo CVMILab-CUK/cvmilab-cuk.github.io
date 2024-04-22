@@ -49,5 +49,22 @@ date: 2024-04-20
         <hr/>
         <img  src="{{site.baseurl}}/images/post/img/casa-2.jpg" alt=""/>
         <img  src="{{site.baseurl}}/images/post/img/casa-3.jpg" alt=""/>
+    
+
+    {% for post in site.post %}
+    {{ site.url }}{{ post.url | remove: 'index.html' }}<br/>
+    {% endfor %}
+    {% for post in site.cheat %}
+    {{ site.url }}{{ post.url | remove: 'index.html' }}<br/>
+    {% endfor %}
+
+    {% for page in site.pages %}
+    {% if page.layout != nil %}
+    {% if page.layout != 'feed' %}
+    {{ site.url }}{{ page.url | remove: 'index.html' }}<br/>
+
+    {% endif %}
+    {% endif %}
+    {% endfor %}
     </p><br/><br/>
 </section>
