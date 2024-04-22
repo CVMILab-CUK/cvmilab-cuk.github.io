@@ -3,13 +3,9 @@ layout: landing
 permalink : /
 ---
 
-{% assign last_post = nil %}
-{% for post in site.posts %}
-	{% if last_post == nil or post.date > last_post.date %}
-	{% assign last_post = post %}
-	{% endif %}
-{% endfor %}
-
+{% assign sorted_posts = site.post | sort: 'date' | reverse %}
+{% assign first_posts = sorted_posts[0] %}
+{% assign second_posts = sorted_posts[1] %}
 
 				<!-- Banner -->
 					<section id="banner">
@@ -41,18 +37,19 @@ permalink : /
 				<!-- Two -->
 					<section id="two" class="wrapper alt style2">
 						<section class="spotlight">
-							<div class="image"><img src="images/pic01.jpg" alt="" /></div><div class="content">
-								<h2>Magna primis lobortis<br />
-								sed ullamcorper</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+							<div class="image"><img src="{{site.baseurl}}/images/{{first_posts.image}}" alt="" /></div><div class="content">
+								<h2>{{first_posts.title}}</h2>
+								<p>{{first_posts.description}}<br/>
+									posted by {{first_posts.date  | date: "%Y-%m-%d" }}<br/>
+									<a href="{{site.baseurl}}{{first_posts.permalink}}">Read More <span class="icon fa-arrow-right"></span></a></p>
 							</div>
 						</section>
 						<section class="spotlight">
-							<div class="image"><img src="images/main/banner2.jpg" alt="" /></div><div class="content">
-								<h2>New Article<br />
-								Aceepted</h2>
-								<p>{{last_post.description}}<br/>
-									<a href="{{site.baseurl}}{{last_post.permalink}}">Read More <span class="icon fa-arrow-right"></span></a>
+							<div class="image"><img src="{{site.baseurl}}/images/{{second_posts.image}}" alt="" /></div><div class="content">
+								<h2>{{second_posts.title}}</h2>
+								<p>{{second_posts.description}}<br/>
+									posted by {{second_posts.date  | date: "%Y-%m-%d" }}<br/>
+									<a href="{{site.baseurl}}{{second_posts.permalink}}">Read More <span class="icon fa-arrow-right"></span></a>
 								</p>	
 							</div>
 						</section>

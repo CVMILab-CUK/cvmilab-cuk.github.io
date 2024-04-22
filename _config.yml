@@ -16,14 +16,17 @@ description:
 collections:
   pages:
       output: true
-  posts:
-    output: true
-    permalink: /:basename:output_ext
 
-include:
-  - _pages
-  - _posts
-  - _cheat
+  post:
+    output: true
+
+  cheat:
+    output: true
+
+# include:
+#   - _pages
+#   - _posts
+#   - _cheat
 
 owner: The Catholic University of Korea # or company name
 first_published: 2020 # if migrating another site, the year of your first publish

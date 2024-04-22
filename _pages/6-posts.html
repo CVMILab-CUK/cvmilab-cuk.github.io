@@ -1,0 +1,45 @@
+---
+layout: page
+title: Posts
+permalink: /posts/
+image: banner.jpg
+---
+
+{% assign sorted_posts = site.post | sort: 'date' | reverse %}
+
+
+
+<section>
+    <header>
+    <h2> Posts</h2>
+    <p>CVMI Lab에서 제공하고 있는 다양한 뉴스들입니다.<br/> 각 포스트에 다양한 소식들을 전하고 있습니다.</p>
+    </header>
+    <hr/>
+
+    <table class="post-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+            {% for post in sorted_posts %}
+            <tr>
+                <td>
+                    <a href="{{ post.url }}">{{post.title}}</a>
+                </td>
+                <td>
+                    {{post.description}}
+                </td>
+                <td>
+                    {{post.date | date: "%Y-%m-%d"}}
+                </td>
+            </tr>
+            {% endfor %}
+        <tbody>
+
+        </tbody>
+    </table>
+    
+</section>
